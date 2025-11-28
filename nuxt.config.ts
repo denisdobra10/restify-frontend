@@ -68,40 +68,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
       crawlLinks: true,
-      routes: [
-        '/',
-        '/docs',
-        '/docs/quickstart',
-        '/docs/api/repositories',
-        '/docs/api/fields',
-        '/docs/api/actions',
-        '/docs/api/relations',
-        '/docs/api/getters',
-        '/docs/api/repositories-advanced',
-        '/docs/api/repositories-basic',
-        '/docs/api/repository-generation',
-        '/docs/api/rest-methods',
-        '/docs/api/serializer',
-        '/docs/api/validation-methods',
-        '/docs/auth/authentication',
-        '/docs/auth/authorization',
-        '/docs/auth/profile',
-        '/docs/search/basic-filters',
-        '/docs/search/advanced-filters',
-        '/docs/search/sorting',
-        '/docs/performance/performance',
-        '/docs/performance/solutions',
-        '/docs/graphql/graphql',
-        '/docs/graphql/graphql-generation',
-        '/docs/mcp/mcp',
-        '/docs/mcp/repositories',
-        '/docs/mcp/fields',
-        '/docs/mcp/getters',
-        '/docs/mcp/json-schema-converter',
-        '/docs/mcp/actions',
-        '/docs/boost/boost',
-        '/docs/testing/testing'
-      ]
+      routes: ['/']
     }
   }
 })
