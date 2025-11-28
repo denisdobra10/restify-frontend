@@ -64,14 +64,15 @@ export default defineNuxtConfig({
   // Static site generation
   ssr: true,
   nitro: {
+    preset: 'vercel',
     prerender: {
       failOnError: false,
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: [
-        '/api/_content/cache.**',
-        '/api/_content/query/**'
-      ]
+      crawlLinks: true,
+      routes: ['/']
+    },
+    // Bundle the SQLite database for serverless
+    externals: {
+      inline: ['@nuxt/content']
     }
   }
 })
