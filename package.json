@@ -1,0 +1,32 @@
+{
+  "name": "laravel-restify-docs-v3",
+  "version": "1.0.0",
+  "description": "Modern documentation for Laravel Restify with Tailwind CSS",
+  "author": "binarcode",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@iconify/json": "^2.2.408",
+    "@nuxt/content": "^3.8.2",
+    "@nuxt/icon": "^2.1.0",
+    "@nuxt/ui": "^4.1.0",
+    "@vueuse/nuxt": "^12.0.0",
+    "better-sqlite3": "^12.4.1",
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.13",
+    "@heroicons/vue": "^2.2.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^22.8.6",
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.2.12"
+  }
+}
