@@ -61,18 +61,47 @@ export default defineNuxtConfig({
     typeCheck: false
   },
 
-  // Static site generation
+  // Static site generation for Vercel
   ssr: true,
   nitro: {
-    preset: 'vercel',
+    preset: 'vercel-static',
     prerender: {
       failOnError: false,
       crawlLinks: true,
-      routes: ['/']
-    },
-    // Bundle the SQLite database for serverless
-    externals: {
-      inline: ['@nuxt/content']
+      routes: [
+        '/',
+        '/docs',
+        '/docs/quickstart',
+        '/docs/api/repositories',
+        '/docs/api/fields',
+        '/docs/api/actions',
+        '/docs/api/relations',
+        '/docs/api/getters',
+        '/docs/api/repositories-advanced',
+        '/docs/api/repositories-basic',
+        '/docs/api/repository-generation',
+        '/docs/api/rest-methods',
+        '/docs/api/serializer',
+        '/docs/api/validation-methods',
+        '/docs/auth/authentication',
+        '/docs/auth/authorization',
+        '/docs/auth/profile',
+        '/docs/search/basic-filters',
+        '/docs/search/advanced-filters',
+        '/docs/search/sorting',
+        '/docs/performance/performance',
+        '/docs/performance/solutions',
+        '/docs/graphql/graphql',
+        '/docs/graphql/graphql-generation',
+        '/docs/mcp/mcp',
+        '/docs/mcp/repositories',
+        '/docs/mcp/fields',
+        '/docs/mcp/getters',
+        '/docs/mcp/json-schema-converter',
+        '/docs/mcp/actions',
+        '/docs/boost/boost',
+        '/docs/testing/testing'
+      ]
     }
   }
 })
