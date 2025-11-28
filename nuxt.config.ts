@@ -61,17 +61,14 @@ export default defineNuxtConfig({
     typeCheck: false
   },
 
-  // Static site generation
+  // Static site generation for Vercel
   ssr: true,
   nitro: {
+    preset: 'vercel-static',
     prerender: {
       failOnError: false,
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: [
-        '/api/_content/cache.**',
-        '/api/_content/query/**'
-      ]
+      crawlLinks: true,
+      routes: ['/']
     }
   }
 })
